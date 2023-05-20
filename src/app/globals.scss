@@ -1,0 +1,133 @@
+$default-red: #cc0028;
+$first-color: black;
+$second-color: white;
+$forth-color: #d9d9d9;
+$breaking-point: 640px;
+$bg-color: rgba($first-color, 0.8);
+
+* ::-webkit-scrollbar { width: 3px; height: 3px;}
+* ::-webkit-scrollbar-button { display: none; }
+* ::-webkit-scrollbar-thumb {
+  height: auto;
+  background-color: #d4d4d4;
+  border-radius: 0.2rem;
+}
+* ::-webkit-scrollbar-track-piece { background-color: #161616;}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('/bg.jpg');
+
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.sec {
+  padding: 0 5% !important;
+}
+
+.sec-cont {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: $second-color;
+  text-decoration: none;
+}
+
+.separation {
+  width: 100%;
+  height: 1px;
+  background-color:  $second-color;
+  margin: .5rem 0;
+}
+
+.form-input-field {
+  display: block;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  height: 1.7rem;
+  width: 270px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+.primary-btn {
+  cursor: pointer;
+  background-color: $default-red;
+  color: $second-color;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.6rem 2.5rem;
+}
+
+.cancel-btn {
+  display: block;
+  text-decoration: underline;
+  margin-top: 3rem;
+  color: $forth-color;
+  font-size: 0.8rem;
+}
+
+.cancel-btn {
+  display: block;
+  text-decoration: underline;
+  margin-top: 3rem;
+  color: $forth-color;
+  font-size: 0.8rem;
+}
+
+.loading {
+  pointer-events: none;
+  opacity: .7;
+}
+
+.error-color {
+  display: block;
+  color: $default-red;
+}
+
+@import './sass-sections/header.scss';
+@import './sass-sections/footer.scss';
+@import './sass-sections/nav-menu.scss';
+@import './sass-sections/under-construction.scss';
+@import './sass-sections/about-us.scss';
+@import './sass-sections/salons.scss';
+@import './sass-sections/restaurant.scss';
+@import './sass-sections/login.scss';
+@import './sass-sections/tickets.scss';
+@import './sass-sections/home.scss';
+@import './sass-sections/registration.scss';
+@import './sass-sections/movies.scss';
+@import './sass-sections/booking-guest.scss';

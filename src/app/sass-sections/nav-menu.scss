@@ -1,0 +1,37 @@
+nav {
+  .nav-content {
+    menu {
+      display: flex;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      .nav-item {
+        border-radius: .5rem;
+        padding: .5rem 1rem;
+        background-color: $second-color;
+        margin-right: .5rem;
+        a {
+          color: $first-color;
+        }
+      }
+    }
+  }
+}
+
+// Mobile
+@media screen and (max-width: $breaking-point) {
+  nav {
+    .nav-content {
+      menu {
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+          width: 0;
+          height: 0;
+          display: none;
+        }
+      }
+    }
+  }
+}
